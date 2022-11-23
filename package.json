@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/edusoftpro/cypress-cucumber/issues"
   },
-  "homepage": "https://github.com/edusoftpro/cypress-cucumber#readme"
+  "homepage": "https://github.com/edusoftpro/cypress-cucumber#readme",
+  "devDependencies": {
+    "cypress": "^11.2.0"
+  }
 }
