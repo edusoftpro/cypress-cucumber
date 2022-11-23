@@ -4,7 +4,11 @@
   "description": "Cypress framework with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "cypress run",
+    "cy:zero": "npm run cy:run -- --spec ./cypress/e2e/d1/z0a/*.cy.js",
+    "cy:one": "npm run cy:run -- --spec ./cypress/e2e/d1/z0*/*.cy.js"
   },
   "repository": {
     "type": "git",
