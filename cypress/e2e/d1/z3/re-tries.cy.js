@@ -5,7 +5,7 @@ describe(
   "Multiple assertions",
   {
     retries: {
-      runMode: 0,
+      runMode: 5,
       openMode: 1,
     },
   },

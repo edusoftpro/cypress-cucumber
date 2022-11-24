@@ -1,20 +1,20 @@
 /// <reference types="Cypress" />
 
 context("Simple demo test", () => {
-  //   beforeEach(() => {
-  //     cy.visit("/does-not-exist");
-  //   });
+  // beforeEach(() => {
+  //   cy.visit("/does-not-exist");
+  // });
 
   it("");
 
   it("Cypress");
 
-  it("Hello Cypress World", () => {
+  it.skip("Hello Cypress World", () => {
     expect(true).to.equal(true);
   });
 
   xit("True != False", () => {
-    expect(true).to.equal(false);
+    expect(true).to.equal(true);
   });
 
   it("Expect true to be true", () => {

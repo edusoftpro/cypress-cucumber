@@ -38,12 +38,13 @@ describe("Calling debugger", () => {
       .should("have.length", 2 + 1); // ToDo has 2 items by default
   });
 
-  it("Use debugger, debug() or pause() to fix it", () => {
+  it.only("Use debugger, debug() or pause() to fix it", () => {
     cy.get("[data-test=new-todo]")
       .type(`Check debugger{enter}`)
       .get(".todo-list li")
+      .debug()
       .should("have.length", 2 + 1); // ToDo has 2 items by default
     cy.contains("Active").click();
-    cy.get(".todo-list li").should("have.length", 1);
+    cy.get(".todo-list li").should("have.length", 3);
   });
 });
