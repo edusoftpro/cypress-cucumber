@@ -8,7 +8,8 @@
     "cy:open": "./node_modules/.bin/cypress open",
     "cy:run": "cypress run",
     "cy:zero": "npm run cy:run -- --spec ./cypress/e2e/d1/z0a/*.cy.js",
-    "cy:one": "npm run cy:run -- --spec ./cypress/e2e/d1/z0*/*.cy.js"
+    "cy:one": "npm run cy:run -- --spec ./cypress/e2e/d1/**/*.cy.js",
+    "cy:two": "npm run cy:run -- --spec ./cypress/e2e/d2/**/*.cy.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
     "eslint": "^8.28.0",
     "eslint-plugin-cypress": "^2.12.1",
     "playwright-webkit": "^1.28.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0"
   }
 }
