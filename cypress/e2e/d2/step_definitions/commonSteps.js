@@ -13,13 +13,16 @@ Then("Title of web page is {string}", (title) => {
   cy.title().should("include", title);
 });
 
-When('I provide search query as {string}', (query) => {
+When("I provide search query as {string}", (query) => {
   homePage.clickConsentCookies();
   homePage.clickSearchTxtBox();
   homePage.typeInSearchTxtBox(query);
   homePage.submitSearchQuery();
 });
 
-Then('Verify first search result to match {string} keyword', (search_keyword) => {
-  let result = resultPage.verifyFirstResult(search_keyword);
-});
+Then(
+  "Verify first search result to match {string} keyword",
+  (search_keyword) => {
+    let result = resultPage.verifyFirstResult(search_keyword);
+  }
+);
