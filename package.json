@@ -11,7 +11,10 @@
     "cy:one": "npm run cy:run -- --spec ./cypress/e2e/d1/**/*.cy.js",
     "cy:two": "npm run cy:run -- --spec ./cypress/e2e/d2/**/*.cy.js",
     "cy:tag": "npm run cy:run --env tags=@smoke",
-    "cy:tags": "npm run cy:run --env tags='@ui or @api'"
+    "cy:tags": "npm run cy:run --env tags='@ui or @api'",
+    "cy:allure": "cypress run --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report": "allure generate allure-results --clean -o allure-report"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^11.2.0",
     "esbuild": "^0.15.15",
     "eslint": "^8.28.0",
