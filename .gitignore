@@ -152,5 +152,9 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node,cypressio
 
+# Reports
 allure-results/
 allure-report/
+
+mochawesome-report/
+reports/

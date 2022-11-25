@@ -35,6 +35,7 @@ module.exports = defineConfig({
       runMode: 0,
       openMode: 1,
     },
+    reporter: "mochawesome",
     reporterOptions: {
       reportFilename: "test-report",
       overwrite: false,
