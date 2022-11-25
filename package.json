@@ -9,7 +9,9 @@
     "cy:run": "cypress run",
     "cy:zero": "npm run cy:run -- --spec ./cypress/e2e/d1/z0a/*.cy.js",
     "cy:one": "npm run cy:run -- --spec ./cypress/e2e/d1/**/*.cy.js",
-    "cy:two": "npm run cy:run -- --spec ./cypress/e2e/d2/**/*.cy.js"
+    "cy:two": "npm run cy:run -- --spec ./cypress/e2e/d2/**/*.cy.js",
+    "cy:tag": "npm run cy:run --env tags=@smoke",
+    "cy:tags": "npm run cy:run --env tags='@ui or @api'"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,4 @@
+@ui
 Feature: Navigate to Google.com and verify the title
     @smoke @test
     Scenario: Verify title of web page
