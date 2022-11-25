@@ -25,12 +25,19 @@ module.exports = defineConfig({
     setupNodeEvents,
     specPattern: "cypress/e2e/d2/features/*.feature",
     chromeWebSecurity: false,
+    env: {
+      allureReuseAfterSpec: true,
+    },
     experimentalRunAllSpecs: true,
     experimentalStudio: true,
     experimentalWebKitSupport: true,
     retries: {
       runMode: 0,
       openMode: 1,
+    },
+    reporterOptions: {
+      reportFilename: "test-report",
+      overwrite: false,
     },
   },
 });
