@@ -21,6 +21,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: '2jbtvh',
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/d2/features/*.feature",
@@ -33,7 +34,7 @@ module.exports = defineConfig({
     experimentalWebKitSupport: true,
     retries: {
       runMode: 0,
-      openMode: 1,
+      openMode: 0,
     },
     reporter: "mochawesome",
     reporterOptions: {
