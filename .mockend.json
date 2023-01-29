@@ -29,6 +29,9 @@
   "Post": {
     "status": {
       "string": ["published", "draft"]
+    },
+    "author": {
+      "belongsTo": "User"
     }
   }
 }
