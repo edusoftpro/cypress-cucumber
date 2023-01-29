@@ -24,8 +24,5 @@
     "isPublic": {
       "boolean": {}
     }
-  },
-  "Post": {
-    "status": ["published", "draft"]
   }
 }
