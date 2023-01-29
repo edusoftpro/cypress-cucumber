@@ -12,3 +12,13 @@ Cypress framework with cucumber
 [https://github.com/JoanEsquivel/cypress-cucumber-boilerplate](https://github.com/JoanEsquivel/cypress-cucumber-boilerplate)
 
 [https://github.com/misiekofski/cypress-framework](https://github.com/misiekofski/cypress-framework)
+
+[https://mockend.com/](https://mockend.com/)
+
+### Restful API:
+
+[https://mockend.com/edusoftpro/cypress-cucumber/graphql](https://mockend.com/edusoftpro/cypress-cucumber/graphql)
+
+[https://mockend.com/edusoftpro/cypress-cucumber/users](https://mockend.com/edusoftpro/cypress-cucumber/users)
+
+[https://mockend.com/edusoftpro/cypress-cucumber/posts](https://mockend.com/edusoftpro/cypress-cucumber/posts)
