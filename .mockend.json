@@ -26,9 +26,6 @@
     }
   },
   "Post": {
-    "status": ["published", "draft"],
-    "author": {
-      "belongsTo": "User"
-    }
+    "status": ["published", "draft"]
   }
 }
