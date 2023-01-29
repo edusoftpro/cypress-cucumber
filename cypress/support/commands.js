@@ -27,3 +27,41 @@
 Cypress.Commands.add("text", { prevSubject: true }, (subject, options) => {
   return subject.text();
 });
+
+Cypress.Commands.add("apiGET", (endpoint) => {
+  cy.request({
+    method: "GET",
+    url: `https://cytagapi-default-rtdb.europe-west1.firebasedatabase.app/${endpoint}`,
+    headers: { "Content-Type": "application/json" },
+    failOnStatusCode: false,
+  });
+});
+
+Cypress.Commands.add("apiPOST", (endpoint, body) => {
+  cy.request({
+    method: "POST",
+    url: `https://cytagapi-default-rtdb.europe-west1.firebasedatabase.app/${endpoint}`,
+    headers: { "Content-Type": "application/json" },
+    failOnStatusCode: false,
+    body: body,
+  });
+});
+
+Cypress.Commands.add("apiPUT", (endpoint, body) => {
+  cy.request({
+    method: "PUT",
+    url: `https://cytagapi-default-rtdb.europe-west1.firebasedatabase.app/${endpoint}`,
+    headers: { "Content-Type": "application/json" },
+    failOnStatusCode: false,
+    body: body,
+  });
+});
+
+Cypress.Commands.add("apiDELETE", (endpoint) => {
+  cy.request({
+    method: "DELETE",
+    url: `https://cytagapi-default-rtdb.europe-west1.firebasedatabase.app/${endpoint}`,
+    headers: { "Content-Type": "application/json" },
+    failOnStatusCode: false,
+  });
+});
