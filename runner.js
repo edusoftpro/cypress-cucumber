@@ -65,8 +65,7 @@ cypress
 
 // Get current timestamp
 function getTimeStamp() {
-  var now = new moment().format("DD-MM-YYYY--HH_mm_ss");
-  return now;
+  return new moment().format("DD-MM-YYYY--HH_mm_ss");
 }
 
 // Generate unified report from sourecReport.files directory and create a unified report and store it in finalReport.reportDir location

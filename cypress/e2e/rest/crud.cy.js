@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 const moment = require("moment");
 
-describe("template spec", () => {
-  it.only("Verify response status code is {int}", () => {
+describe("Check CRUD tests for RESTful API of Firebase Realtime DB", () => {
+  it("Verify GET, POST, PUT and DELETE methods", () => {
     const timestamp = moment().valueOf();
     const body = {
       user_id: timestamp,

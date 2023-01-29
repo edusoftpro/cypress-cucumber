@@ -23,6 +23,6 @@ When("I provide search query as {string}", (query) => {
 Then(
   "Verify first search result to match {string} keyword",
   (search_keyword) => {
-    let result = resultPage.verifyFirstResult(search_keyword);
+    resultPage.verifyFirstResult(search_keyword);
   }
 );

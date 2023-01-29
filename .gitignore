@@ -158,3 +158,6 @@ allure-report/
 
 mochawesome-report/
 reports/
+
+# SonarQube
+.scannerwork/
