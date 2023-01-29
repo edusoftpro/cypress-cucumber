@@ -34,7 +34,7 @@
       "string": ["published", "draft"]
     },
     "text": {
-      "regexp": "#[A-z]{5,10} [a-z]{3,8}\\."
+      "regexp": "[A-Z][a-z]{3,8} [a-z]{3,8}\\."
     },
     "author": {
       "belongsTo": "User"
