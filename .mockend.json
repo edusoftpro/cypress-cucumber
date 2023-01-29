@@ -23,6 +23,9 @@
     },
     "isPublic": {
       "boolean": {}
+    },
+    "posts": {
+      "hasMany": "Post"
     }
   },
 
