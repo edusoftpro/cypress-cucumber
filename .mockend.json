@@ -1,5 +1,7 @@
 {
   "Post": {
-    "status": ["published", "draft"]
+    "status": {
+      "string": ["published", "draft"]
+    }
   }
 }
