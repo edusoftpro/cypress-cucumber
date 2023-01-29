@@ -23,6 +23,15 @@
     },
     "isPublic": {
       "boolean": {}
+    },
+    "posts": {
+      "hasMany": "Post"
+    }
+  },
+  "Post": {
+    "status": ["published", "draft"],
+    "auther": {
+      "belongsTo": "User"
     }
   }
 }
