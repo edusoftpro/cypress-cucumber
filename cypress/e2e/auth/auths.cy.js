@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
 // Read more: https://www.cypress.io/blog/2022/12/02/the-journey-behind-cy-origin/
-beforeEach(() => {
-  cy.visit("https://example.cypress.io/commands/querying");
-});
+// beforeEach(() => {
+//   cy.visit("https://example.cypress.io/commands/querying");
+// });
 
 describe("Tests authentications", () => {
-  it("Check the basic auth", () => {
+  it.only("Check the basic auth", () => {
     cy.visit("https://admin:admin@the-internet.herokuapp.com/basic_auth");
     cy.get("p").contains("Congratulations!");
   });

@@ -10,12 +10,11 @@ class HomePage {
   }
 
   typeInSearchTxtBox(value) {
-    return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).type(value);
+    return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).type(value + '{esc}');
   }
 
   submitSearchQuery() {
-    //press enter after query is provided, for submission
-    return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).type("{enter}");
+    return cy.get(elements.HOMEPAGE.SEARCH_BUTTON).click();
   }
 }
 

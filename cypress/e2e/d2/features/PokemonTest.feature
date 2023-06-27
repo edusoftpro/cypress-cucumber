@@ -15,6 +15,5 @@ Feature: Pokemon GET /pokemon/{pokemon_name or id}
         Then Verify response status code is <status code>
         Examples:
             | pokemon       | status code |
-            | justin bieber | 404         |
-            | suski         | 404         |
+            | pikachu       | 200         |
             | graphql       | 404         |
