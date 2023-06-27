@@ -57,5 +57,5 @@ context("Simple demo test", () => {
     expect(Cypress._.divide(1, 0)).to.equal(0);
   });
 
-  //   npx cypress run --spec "cypress/e2e/d1/z0b/demo.cy.js"
+  //   npx cypress run --spec "./cypress/e2e/d1/z0b/demo.cy.js"
 });

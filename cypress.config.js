@@ -21,10 +21,10 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectId: '2jbtvh',
+  projectId: "2jbtvh",
   e2e: {
     setupNodeEvents,
-    specPattern: "cypress/e2e/d2/features/*.feature",
+    // specPattern: "cypress/e2e/d2/features/*.feature",
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,

@@ -6,7 +6,7 @@ describe(
   {
     retries: {
       runMode: 5,
-      openMode: 1,
+      openMode: 2,
     },
   },
   () => {
