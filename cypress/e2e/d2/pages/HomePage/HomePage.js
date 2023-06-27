@@ -10,7 +10,7 @@ class HomePage {
   }
 
   typeInSearchTxtBox(value) {
-    return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).type(value + '{esc}');
+    return cy.get(elements.HOMEPAGE.SEARCH_TXTBOX).type(value + '{enter}{esc}');
   }
 
   submitSearchQuery() {
