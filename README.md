@@ -1,6 +1,8 @@
 # cypress-cucumber
 Cypress framework with cucumber
 
+Start with **npm install**
+
 ### Credits go to:
 
 [https://github.com/badeball/cypress-cucumber-preprocessor](https://github.com/badeball/cypress-cucumber-preprocessor)
